@@ -56,7 +56,7 @@ This project is a reproduction of the [The Color!](https://www.shj.work/tools/se
    ```
 
 ## 部署(可选的)
-**部署到pythonanywhere**
+**部署到[pythonanywhere](https://www.pythonanywhere.com/)**
 - 创建一个pythonanywhere账号（免费）
 - 上传项目到pythonanywhere
 - 创建虚拟环境，并安装依赖
@@ -77,7 +77,7 @@ application = app.server
 - 打开浏览器，输入pythonanywhere web服务的域名，即可访问游戏
 
 ## Deployment (Optional)
-**Deploy to pythonanywhere**
+**Deploy to [pythonanywhere](https://www.pythonanywhere.com/)**
 - Create a pythonanywhere account (free)
 - Upload the project to pythonanywhere
 - Create a virtual environment and install dependencies
