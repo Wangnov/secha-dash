@@ -71,25 +71,44 @@ app.layout = html.Div(
                     direction="vertical",
                     align="center",
                     style=style(
-                        height="calc(100vh - 128px)",
+                        height="calc(100vh - 96px)",
                         width="100%",
                         justifyContent="space-around",
                     ),
                 ),
-                fac.AntdSpace(
-                    [],  # 未使用
-                    id="footer",
-                    align="center",
-                    style=style(height=64, width="100%", justifyContent="center"),
-                ),
             ],
             id="main",
-            style=style(
-                height="100vh",
-                width="100vw",
-            ),
         ),
-    ]
+        html.Div(
+            [
+                fac.AntdText(
+                    "View in ",
+                    style=style(
+                        color="white",
+                    ),
+                ),
+                html.A(
+                    "Github",
+                    href="https://github.com/Wangnov/secha-dash",
+                    style=style(fontSize=14, color="-webkit-link"),
+                ),
+            ],
+            style=style(
+                display="flex",
+                alignItems="baseline",
+                gap=5,
+                height=32,
+                position="relative",
+                width="100%",
+                justifyContent="center",
+            ),
+            id="footer",
+        ),
+    ],
+    style=style(
+        height="100vh",
+        width="100vw",
+    ),
 )
 
 

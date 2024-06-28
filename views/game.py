@@ -53,8 +53,7 @@ def content():
                     [
                         fac.AntdText(
                             "过关：",
-                            style=style(fontSize=16, marginLeft=5,
-                                        fontWeight="bold"),
+                            style=style(fontSize=16, marginLeft=5, fontWeight="bold"),
                         ),
                         fac.AntdText(
                             "0", id="rank", style=style(fontSize=16, fontWeight="bold")
@@ -64,7 +63,7 @@ def content():
                 html.Div(
                     [
                         fuc.FefferyWindowSize(id="window-size"),
-                        html.Div(id='message-box'),
+                        html.Div(id="message-box"),
                         html.Div(
                             fuc.FefferyCountDown(
                                 id="count-down",
@@ -123,7 +122,6 @@ def content():
                 paddingTop=20,
             ),
         ),
-        fac.AntdSpace([], id="footer", style=style(height=64)),
     ]
 
 
@@ -140,8 +138,7 @@ def callback_func(nClicks, rank):
 
         # 防止rgb数值在增量后超过255
         init_color, init_color_rgb = get_color(255 - calculate_d(rank))
-        diff_color, diff_color_rgb = get_lv_color(
-            init_color, calculate_d(rank))
+        diff_color, diff_color_rgb = get_lv_color(init_color, calculate_d(rank))
 
         diff_col_index = random.randint(0, box_num - 1)
         diff_row_index = random.randint(0, box_num - 1)
@@ -194,17 +191,18 @@ def callback_func(nClicks, rank):
     [
         Input("window-size", "_width"),
         Input("window-size", "_height"),
-    ]
+    ],
 )
 def window_size_callback(width, height):
     if width / height > 1:
         return fac.AntdMessage(
-            content='为了更好的游戏体验，建议调整浏览器窗口比例为竖屏',
-            type='info',
+            content="为了更好的游戏体验，建议调整浏览器窗口比例为竖屏",
+            type="info",
             maxCount=1,
-            icon='antd-info-circle',
-)
+            icon="antd-info-circle",
+        )
     return dash.no_update
+
 
 # 倒计时输出
 
@@ -273,8 +271,7 @@ def game_over_callback(countdown, rank):
             fac.AntdResult(
                 title=fac.AntdTitle(f"{level}关", style=style(color="white")),
                 subTitle=fac.AntdTitle(text, type="secondary"),
-                icon=fac.AntdIcon(icon=icon, style=style(
-                    fontSize=48, color="white")),
+                icon=fac.AntdIcon(icon=icon, style=style(fontSize=48, color="white")),
                 style=style(
                     width="80vw",
                     marginTop=20,
