@@ -2,10 +2,14 @@
 # secha-dash
 
 ## 项目描述
-本项目是一个基于Dash框架的Web应用程序，旨在帮助用户通过识别颜色差异来提高他们的视觉感知能力。游戏界面包含多个方块，其中一个方块的颜色与其他方块略有不同。用户需要通过点击不同的方块来识别出颜色差异。
+本项目是一个基于Dash框架的Web应用程序，旨在帮助用户通过识别颜色差异来测试视觉感知能力。游戏界面包含多个方块，其中一个方块的颜色与其他方块略有不同。用户需要通过点击不同的方块来识别出颜色差异。
+项目基于Dash框架构建，使用了[fac](https://fac.feffery.tech)和[fuc](https://fuc.feffery.tech)组件库，并提供了快速编写Dash CSS的[实用工具库](https://github.com/CNFeffery/feffery-dash-utils)。
+本项目是对[找色差小游戏](https://www.shj.work/tools/secha/)的仿写
 
 ## Project Description
-This project is a web application based on the Dash framework, aimed at helping users improve their visual perception by identifying color differences. The game interface contains several blocks, one of which has a slightly different color from the others. The user needs to click different blocks to identify the color difference.
+This project is a web application based on the Dash framework, aiming to help users test their visual perception ability through color difference recognition. The game interface contains several blocks, and one block has a slightly different color from the others. The user needs to click different blocks to identify the color difference.
+The project is based on the Dash framework, and uses the [fac](https://fac.feffery.tech) and [fuc](https://fuc.feffery.tech) component libraries, and provides a [utility library](https://github.com/CNFeffery/feffery-dash-utils) for writing Dash CSS quickly.
+This project is a reproduction of the [The Color!](https://www.shj.work/tools/secha/).
 
 ## 功能特性
 - **颜色差异识别**：用户需要在多个颜色相似的方块中识别出颜色略有不同的方块。
