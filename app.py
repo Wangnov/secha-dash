@@ -104,4 +104,7 @@ def callback_func(c):
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(
+        # debug=True,
+        # port=8050,
+    )
